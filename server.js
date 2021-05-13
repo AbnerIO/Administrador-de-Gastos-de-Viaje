@@ -61,6 +61,6 @@ app.post("/login", passport.authenticate("local",{
     failureRedirect: "/login"
 }))
 
-app.listen(8080, ()=>{
+app.listen(process.env.PORT, ()=>{
     console.log("servidor en el 8080")
 })
