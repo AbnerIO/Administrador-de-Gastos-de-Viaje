@@ -4,7 +4,7 @@ const passport=require("passport");
 const cookieParser = require("cookie-parser");
 const session = require("express-session");
 const PassportLocal = require("passport-local");
-
+require('dotenv').config()
 
 
 app.set("view engine", "ejs")
@@ -42,7 +42,7 @@ passport.deserializeUser(function(id, done){
 
 
 
-app.get("/", (req,res,next)=>{
+app.get("/tproject", (req,res,next)=>{
     if(req.isAuthenticated()) return next();
 
     res.redirect("/")
@@ -52,15 +52,15 @@ app.get("/", (req,res,next)=>{
 })
 
 
-app.get("/login", (req, res)=>{
+app.get("/", (req, res)=>{
     res.render("login")
 })
 
 app.post("/login", passport.authenticate("local",{
-    successRedirect: "/",
-    failureRedirect: "/login"
+    successRedirect: "/tproject",
+    failureRedirect: "/"
 }))
 
 app.listen(process.env.PORT, ()=>{
-    console.log("servidor en el 8080")
+    console.log(`SERVIDOR EN ${process.env.PORT}`)
 })
