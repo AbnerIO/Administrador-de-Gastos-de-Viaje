@@ -9,6 +9,7 @@ const PassportLocal = require("passport-local");
 
 app.set("view engine", "ejs")
 app.use(express.static(__dirname + '/views'))
+app.use(express.static(__dirname + 'app'))
 app.use(express.urlencoded({extender:true}))
 
 app.use(cookieParser("secreto"));
