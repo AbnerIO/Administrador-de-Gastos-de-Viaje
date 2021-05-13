@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Administrador de Viaje</title>
+    <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700">
+    <link rel="shortcut icon" href="./img//suitcase.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="/css/Footer-Dark.css">
+    <link rel="stylesheet" href="/css/Header-Blue.css">
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+
+<body>
+    <header class="header-blue">
+        <nav class="navbar navbar-dark navbar-expand-md navigation-clean-search">
+            <div class="container-fluid"><a class="navbar-brand" href="#">Administrador de Gastos de Viaje</a><img src="./img/Logo.png" alt="logo" id="logo"></div>
+        </nav>
+    </header>
+    <section class="caja" id="Home">
+        <div class="card">
+            <div>
+                <h1>Agrega un concepto</h1>
+            </div>
+            <div class="form">
+                <form id="product-form">
+                    <div class="input">
+                        <div class="content">
+                            <img src="/img/etiqueta.png" alt="concepto" class="stickers">
+                            <div>
+                                <p class="a">Nombre del gasto:</p>
+                            </div>
+                        </div>
+                        <input type="text" id="name" placeholder="Nombre del gasto" required>
+                    </div>
+                    <div class="coins">
+                        <div class="input">
+                            <div class="content">
+                                <img src="/img/coin.png" alt="coin" class="stickers">
+                                <div>
+                                    <p class="a">Monto: </p>
+                                </div>
+                            </div>
+                            <input type="number" id="price" value="1" step="1" min="1" max="999999">
+                        </div>
+                        <div class="coins-currency">
+                            <input type="radio" id="Peso" name="currency" value="Peso" checked>
+                            <label for="Peso">Peso</label><br>
+                            <input type="radio" id="Dolar" name="currency" value="Dolar">
+                            <label for="Dolar" id="Dolar">Dolar</label><br>
+                            <input type="radio" id="Euro" name="currency" value="Euro">
+                            <label for="Euro">Euro</label>
+                        </div>
+                    </div>
+                    <div class="input">
+                        <div class="content">
+                            <img src="/img/place.png" alt="coin" class="stickers">
+                            <div>
+                                <p class="a">Lugar:</p>
+                            </div>
+                        </div>
+                        <input type="text" id="place" placeholder="Ciudad/Pais" required>
+                    </div>
+                    <div class="input">
+                        <div class="content">
+                            <img src="/img/date.png" alt="coin" class="stickers">
+                            <div>
+                                <p class="a">Fecha:</p>
+                            </div>
+                        </div>
+                        <input type="date" id="date" value="19-04-2021" min="19-04-2021" max="01-01-2030" required>
+                    </div>
+                    <div class="input">
+                        <div class="content">
+                            <img src="/img/travelers.png" alt="coin" class="stickers">
+                            <div>
+                                <p class="a">Usuarios</p>
+                            </div>
+                        </div>
+                        <input type="checkbox" id="traveler1" name="Traveler" value="Juan" class="cuadros">
+                        <label for="traveler1"> Juan</label>
+                        <input type="checkbox" id="traveler2" name="Traveler" value="Pedro">
+                        <label for="traveler2"> Pedro</label>
+                        <input type="checkbox" id="traveler3" name="Traveler" value="Carlos">
+                        <label for="traveler3"> Carlos</label><br>
+                        <input type="checkbox" id="traveler4" name="Traveler" value="Ana">
+                        <label for="traveler1"> Ana</label>
+                        <input type="checkbox" id="traveler5" name="Traveler" value="Maria">
+                        <label for="traveler2"> Maria</label>
+                        <input type="checkbox" id="traveler6" name="Traveler" value="Alejandra">
+                        <label for="traveler3"> Alejandra</label>
+                    </div>
+                    <input type="submit" value="Save" class="savebtn">
+                </form>
+            </div>
+        </div>
+        <div class="App" id="App">
+        </div>
+
+        </div>
+    </section>
+    <div class="comandos">
+        <div class="card-comandos">
+            <h1>Acciones</h1>
+            <div class="consola">
+                <h2>Juan</h2>
+                <div class="three-card">
+                    <button class="btn-mini" style="background-color:tomato;" id="1-P">Total MXN</button>
+                    <button class="btn-mini" style="background-color: blue;" id="1-E">Total EUR</button>
+                    <button class="btn-mini" style="background-color: green;" id="1-D">Total USD</button>
+                </div>
+                <button class="btn" id="1-C"> Total/Ciudad</button>
+                <button class="btn" id="1-F"> Por Fechas</button>
+                <button class="btn" id="1-R"> Registro</button>
+                <h2>Pedro</h2>
+                <div class="three-card">
+                    <button class="btn-mini" style="background-color:tomato;" id="2-P">Total MXN</button>
+                    <button class="btn-mini" style="background-color: blue;" id="2-E">Total EUR</button>
+                    <button class="btn-mini" style="background-color: green;" id="2-D">Total USD</button>
+                </div>
+                <button class="btn" id="2-C"> Total/Ciudad</button>
+                <button class="btn" id="2-F"> Por Fechas</button>
+                <button class="btn" id="2-R"> Registro</button>
+                <h2>Carlos</h2>
+                <div class="three-card">
+                    <button class="btn-mini" style="background-color:tomato;" id="3-P">Total MXN</button>
+                    <button class="btn-mini" style="background-color: blue;" id="3-E">Total EUR</button>
+                    <button class="btn-mini" style="background-color: green;" id="3-D">Total USD</button>
+                </div>
+                <button class="btn" id="3-C"> Total/Ciudad</button>
+                <button class="btn" id="3-F"> Por Fechas</button>
+                <button class="btn" id="3-R"> Registro</button>
+                <h2>Ana</h2>
+                <div class="three-card">
+                    <button class="btn-mini" style="background-color:tomato;" id="4-P">Total MXN</button>
+                    <button class="btn-mini" style="background-color: blue;" id="4-E">Total EUR</button>
+                    <button class="btn-mini" style="background-color: green;" id="4-D">Total USD</button>
+                </div>
+                <button class="btn" id="4-C"> Total/Ciudad</button>
+                <button class="btn" id="4-F"> Por Fechas</button>
+                <button class="btn" id="4-R"> Registro</button>
+                <h2>Maria</h2>
+                <div class="three-card">
+                    <button class="btn-mini" style="background-color:tomato;" id="5-P">Total MXN</button>
+                    <button class="btn-mini" style="background-color: blue;" id="5-E">Total EUR</button>
+                    <button class="btn-mini" style="background-color: green;" id="5-D">Total USD</button>
+                </div>
+                <button class="btn" id="5-C"> Total/Ciudad</button>
+                <button class="btn" id="5-F"> Por Fechas</button>
+                <button class="btn" id="5-R"> Registro</button>
+                <h2>Alejandra</h2>
+                <div class="three-card">
+                    <button class="btn-mini" style="background-color:tomato;" id="6-P">Total MXN</button>
+                    <button class="btn-mini" style="background-color: blue;" id="6-E">Total EUR</button>
+                    <button class="btn-mini" style="background-color: green;" id="6-D">Total USD</button>
+                </div>
+                <button class="btn" id="6-C"> Total/Ciudad</button>
+                <button class="btn" id="6-F"> Por Fechas</button>
+                <button class="btn" id="6-R"> Registro</button>
+                <h2>Todos</h2>
+                <div class="three-card">
+                    <button class="btn-mini" style="background-color:tomato;" id="7-P">Total MXN</button>
+                    <button class="btn-mini" style="background-color: blue;" id="7-E">Total EUR</button>
+                    <button class="btn-mini" style="background-color: green;" id="7-D">Total USD</button>
+                </div>
+            </div>
+        </div>
+        <div class="resultados" id="resultados">
+
+        </div>
+    </div>
+    <footer class="footer-dark">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-sm-6 col-md-3 item">
+                    <h3>About</h3>
+                    <ul>
+                        <li>Made in : Mexico</li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+                <div class="col-md-6 item text">
+                    <h3>Más Información</h3>
+                    <p>Esta aplicación es trabajo de una sola persona, es software libre y gratuito. Si quieres empezar
+                        un proyecto con esta base puedes seguir el :</p> <a
+                        href="https://github.com/AbnerIO/Administrador-de-Gastos-de-Viaje">Repositorio oficial del
+                        proyecto</a>
+                </div>
+                <div class="col item "><a href="https://www.facebook.com/CMKiller11/" target="_blank"><img
+                            src="./img/face.png" alt=""></div>
+                <div class="col item"><a href=""><img src="./img/insta.png" alt=""></div>
+                <div class="col item "><a href="https://github.com/AbnerIO " target="_blank"><img src="./img/git.png"
+                            alt=""></div>
+            </div>
+            <p class="copyright">Abner Velázquez © 2021</p>
+        </div>
+    </footer>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-firestore.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+    <script>
+        // Your web app's Firebase configuration Lo dejor abierto porque no tiene mucha importancia en esta ocasion
+        var firebaseConfig = {
+            apiKey: "AIzaSyCeqAgx6pQwqxVwaxXN6IE8CQFB6wCrTQw",
+            authDomain: "admin-gastos-viaje.firebaseapp.com",
+            projectId: "admin-gastos-viaje",
+            storageBucket: "admin-gastos-viaje.appspot.com",
+            messagingSenderId: "553931602678",
+            appId: "1:553931602678:web:b438d2e7e3d2707bf5cad7"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+    </script>
+    <script src="/app.js" type="module"></script>
+
+
+</body>
+
+</html>
