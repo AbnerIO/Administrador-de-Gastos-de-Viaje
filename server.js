@@ -24,7 +24,7 @@ app.use(passport.session());
 
 passport.use(new PassportLocal(function (username, password,done){
     
-    if(username==="a" && password=="a"){
+    if(username==="abner11" && password=="1960233"){
             return done(null,{id:1 ,name:"Cody"});
     }
     done(null, false);
