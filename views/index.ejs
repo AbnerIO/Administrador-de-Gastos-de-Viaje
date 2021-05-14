@@ -21,11 +21,11 @@
         </nav>
     </header>
     <section class="caja" id="Home">
-        <div class="card">
+        <div class="card ">
             <div>
-                <h1>Agrega un concepto</h1>
+                <h1 class="card-header">Agrega un concepto</h1>
             </div>
-            <div class="form">
+            <div class="form " >
                 <form id="product-form">
                     <div class="input">
                         <div class="content">
@@ -34,7 +34,7 @@
                                 <p class="a">Nombre del gasto:</p>
                             </div>
                         </div>
-                        <input type="text" id="name" placeholder="Nombre del gasto" required>
+                        <input type="text" class="form-control"id="name" placeholder="Nombre del gasto" required>
                     </div>
                     <div class="coins">
                         <div class="input">
@@ -44,7 +44,7 @@
                                     <p class="a">Monto: </p>
                                 </div>
                             </div>
-                            <input type="number" id="price" value="1" step="1" min="1" max="999999">
+                            <input type="number" class="form-control" id="price" value="1" step="1" min="1" max="999999">
                         </div>
                         <div class="coins-currency">
                             <input type="radio" id="Peso" name="currency" value="Peso" checked>
@@ -62,7 +62,7 @@
                                 <p class="a">Lugar:</p>
                             </div>
                         </div>
-                        <input type="text" id="place" placeholder="Ciudad/Pais" required>
+                        <input type="text" id="place"class="form-control" placeholder="Ciudad/Pais" required>
                     </div>
                     <div class="input">
                         <div class="content">
@@ -71,7 +71,7 @@
                                 <p class="a">Fecha:</p>
                             </div>
                         </div>
-                        <input type="date" id="date" value="19-04-2021" min="19-04-2021" max="01-01-2030" required>
+                        <input type="date" class="form-control" id="date" value="19-04-2021" min="19-04-2021" max="01-01-2030" required>
                     </div>
                     <div class="input">
                         <div class="content">
@@ -104,10 +104,10 @@
     </section>
     <div class="comandos">
         <div class="card-comandos">
-            <h1>Acciones</h1>
+            <h1 class="card-header">Acciones</h1>
             <div class="consola">
                 <h2>Juan</h2>
-                <div class="three-card">
+                <div class="three-card" >
                     <button class="btn-mini" style="background-color:tomato;" id="1-P">Total MXN</button>
                     <button class="btn-mini" style="background-color: blue;" id="1-E">Total EUR</button>
                     <button class="btn-mini" style="background-color: green;" id="1-D">Total USD</button>
@@ -169,7 +169,8 @@
             </div>
         </div>
         <div class="resultados" id="resultados">
-
+     
+          
         </div>
     </div>
     <footer class="footer-dark">
@@ -222,7 +223,7 @@
     </script>
     <script src="/app.js" type="module"></script>
 
-
+   
 </body>
 
 </html>

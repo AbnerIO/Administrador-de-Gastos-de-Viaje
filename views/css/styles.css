@@ -1,6 +1,5 @@
 /*Header*/
 
-
   #logo {
     width: 3.5rem;
     height: 3.5rem;
@@ -17,6 +16,9 @@
     font-size: 1rem;
   }
   /*BODY*/
+  #sproduct-form {
+    color: #333333;
+  }
   .content {
     display: flex;
   }
@@ -27,11 +29,13 @@
   }
   .card {
     background-color: #a8dadc;
-    min-height: 31rem;
+    min-height: 20rem;
     min-width: 20rem;
     border-radius: 1.2em;
     border-style:solid;
     border-color: #a5a5a5;
+    padding-right: 1rem;
+    padding-bottom: 1rem;
   }
   .card h1 {
     margin: 1rem 1rem 1rem 1.1rem;
@@ -53,16 +57,19 @@
     font-weight: 600;
     font-size: 20px;
     color: #333333;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+    padding-top: .2rem;
+    padding-bottom: .2rem;
     padding-left: 2rem;
     padding-right: 2rem;
     background-color: #ffd27d;
+    height: 3.4rem;
+    white-space: normal;
     border-color: #d8d8d8;
     border-width: 2px;
     border-style: solid;
-    border-radius: 35px;
+    border-radius: 30px;
     margin-left: 5.8rem;
+
   }
   .savebtn:hover {
     background-color:yellow;
@@ -168,10 +175,11 @@
     border: .3rem;
     margin: 2rem;
     border-radius: 1.3rem;
-    width: 12rem;
+    width: 13rem;
     max-height: 1350px;
     border-style:solid;
     border-color: #a5a5a5;
+    padding: .5rem;
   }
   .card-comandos h2 {
     font-size: large;
