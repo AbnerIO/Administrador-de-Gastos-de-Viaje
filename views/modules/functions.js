@@ -272,32 +272,3 @@ const urlSelector = (url, user)=> {
       break;
   }
 }
-
-const urlSelectorImgs = (url, nombreDeGasto)=> {
-  switch (nombreDeGasto) {
-    case "Comida":
-       return '<img src="/img/t1.png" alt="traveler" class="stickers2">';
-      break;
-    case "Transporte":
-       return '<img src="/img/t2.png" alt="traveler" class="stickers2">';
-      break;
-    case "Hotel":
-       return '<img src="/img/t3.png" alt="traveler" class="stickers2">';
-      break;
-    case "Recuerdos":
-       return '<img src="/img/t4.png" alt="traveler" class="stickers2">';
-      break;
-    case "Ropa":
-       return '<img src="/img/t5.png" alt="traveler" class="stickers2">';
-      break;
-    case "Cafe":
-       return '<img src="/img/t6.png" alt="traveler" class="stickers2">';
-      break;
-    case "Zoo":
-       return '<img src="/img/travelers.png" alt="traveler" class="stickers2">';
-      break;
-      default :
-        return '<img src="/img/travelers.png" alt="traveler" class="stickers2">';
-       break;
-  }
-}
