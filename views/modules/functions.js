@@ -108,7 +108,6 @@ export const capturaDeDatos = () => {
       setTimeout(() => firebase.cargarData(), 500)
       firebase.saveConcept(name, price, currency, traveler, place, date_);
       e.preventDefault();
-      ui.resetLog();
     });
 }
 

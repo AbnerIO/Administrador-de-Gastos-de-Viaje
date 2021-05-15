@@ -2,60 +2,27 @@
 <html lang="en">
 
 <head>
-    <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700">
-    <link rel="shortcut icon" href="./img//suitcase.jpg" type="image/x-icon">
-    <link rel="stylesheet" href="/css/Footer-Dark.css">
-    <link rel="stylesheet" href="/css/Header-Blue.css">
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/login.css">
-    <title>Login</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Untitled</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quicksand">
+    <link rel="stylesheet" href="assets/css/OcOrato---Login-form-1.css">
+    <link rel="stylesheet" href="assets/css/OcOrato---Login-form.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="./css/login.css">
+    
 </head>
 
 <body>
-
-    <div id="content" class="flex">
-        <div class="">
-            <div class="page-content page-container" id="page-content">
-                <div class="padding">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="card">
-                                <div class="card-header"><strong>Inicia Sesión</strong></div>
-                                <div class="card-body">
-                                    <form action="/login" method="POST">
-                                        <div class="form-group"><label class="text-muted" name="user"
-                                                for="exampleInputEmail1">Nombre</label><input type="text"
-                                                class="form-control" name="username" id="exampleInputEmail1"
-                                                aria-describedby="emailHelp" placeholder="Usuario"> <small
-                                                id="emailHelp" class="form-text text-muted">Beta: solo acepta al
-                                                admin</small></div>
-                                        <div class="form-group"><label class="text-muted" name="pas"
-                                                for="exampleInputPassword1">Password</label><input type="password"
-                                                class="form-control" name="password" id="exampleInputPassword1"
-                                                placeholder="Contraseña"> <small id="passwordHelp"
-                                                class="form-text text-muted">No compartas tu contraseña con
-                                                nadie</small></div>
-                                        <div class="form-group">
-                                            <div class="form-check"><input type="checkbox"
-                                                    class="form-check-input"><label class="form-check-label">Check me
-                                                    out</label></div>
-                                        </div> <button type="submit" class="btn btn-primary">Submit</button>
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-
-
+    <form id="form" action="/login" method="POST" style="font-family:Quicksand, sans-serif;background-color:rgba(44,40,52,0.73);width:320px;padding:40px;">
+        <h1 id="head" style="color:rgb(83, 189, 193);">Login form</h1><img src="assets/img/Copia%20de%20Blanco%20con%20Ícono%20Colorido%20Computadoras%20Logo%20(3).png" style="width: 234px;">
+        <div></div>
+        <div class="form-group"><input class="form-control" name="username" type="text"  placeholder="Username"></div>
+        <div class="form-group"><input class="form-control" name="password" type="password"  placeholder="Password"></div><button type="submit" class="btn btn-light" id="butonas" style="width:100%;height:100%;margin-bottom:10px;background-color:rgb(106,176,209);" type="button">Button</button><a id="linkas" style="font-size:12px;margin:auto;margin-left:0;margin-right:0;margin-bottom:0;margin-top:0;padding-left:0;padding-right:0;color:rgb(177,151,70);" href="#">Forgot your e mail or password?</a>
+    </form>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
 </body>
 
 </html>

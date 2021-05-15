@@ -15,17 +15,35 @@
 </head>
 
 <body>
+
     <header class="header-blue">
         <nav class="navbar navbar-dark navbar-expand-md navigation-clean-search">
-            <div class="container-fluid"><a class="navbar-brand" href="#">Administrador de Gastos de Viaje</a><img src="./img/Logo.png" alt="logo" id="logo"></div>
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Administrador de Gastos de Viaje</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="/Comandos">Comandos <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/">Salir</a>
+                    </li>
+                    <li class="nav-item dropdown">
+            </div>
+            </li>
+            </ul>
+            <img src="./img/Logo.png" alt="logo" id="logo">
+            </div>
         </nav>
+
     </header>
     <section class="caja" id="Home">
-        <div class="card ">
-            <div>
+        <div class="card" style="font-family:Quicksand, sans-serif;width:320px;padding-left:0px;">
+            
                 <h1 class="card-header">Agrega un concepto</h1>
-            </div>
-            <div class="form " >
+            
+            <div class="form ">
                 <form id="product-form">
                     <div class="input">
                         <div class="content">
@@ -34,7 +52,7 @@
                                 <p class="a">Nombre del gasto:</p>
                             </div>
                         </div>
-                        <input type="text" class="form-control"id="name" placeholder="Nombre del gasto" required>
+                        <input type="text" class="form-control" id="name" placeholder="Nombre del gasto" required>
                     </div>
                     <div class="coins">
                         <div class="input">
@@ -44,7 +62,8 @@
                                     <p class="a">Monto: </p>
                                 </div>
                             </div>
-                            <input type="number" class="form-control" id="price" value="1" step="1" min="1" max="999999">
+                            <input type="number" class="form-control" id="price" value="1" step="1" min="1"
+                                max="999999">
                         </div>
                         <div class="coins-currency">
                             <input type="radio" id="Peso" name="currency" value="Peso" checked>
@@ -62,7 +81,7 @@
                                 <p class="a">Lugar:</p>
                             </div>
                         </div>
-                        <input type="text" id="place"class="form-control" placeholder="Ciudad/Pais" required>
+                        <input type="text" id="place" class="form-control" placeholder="Ciudad/Pais" required>
                     </div>
                     <div class="input">
                         <div class="content">
@@ -71,7 +90,8 @@
                                 <p class="a">Fecha:</p>
                             </div>
                         </div>
-                        <input type="date" class="form-control" id="date" value="19-04-2021" min="19-04-2021" max="01-01-2030" required>
+                        <input type="date" class="form-control" id="date" value="19-04-2021" min="19-04-2021"
+                            max="01-01-2030" required>
                     </div>
                     <div class="input">
                         <div class="content">
@@ -102,77 +122,6 @@
 
         </div>
     </section>
-    <div class="comandos">
-        <div class="card-comandos">
-            <h1 class="card-header">Acciones</h1>
-            <div class="consola">
-                <h2>Juan</h2>
-                <div class="three-card" >
-                    <button class="btn-mini" style="background-color:tomato;" id="1-P">Total MXN</button>
-                    <button class="btn-mini" style="background-color: blue;" id="1-E">Total EUR</button>
-                    <button class="btn-mini" style="background-color: green;" id="1-D">Total USD</button>
-                </div>
-                <button class="btn" id="1-C"> Total/Ciudad</button>
-                <button class="btn" id="1-F"> Por Fechas</button>
-                <button class="btn" id="1-R"> Registro</button>
-                <h2>Pedro</h2>
-                <div class="three-card">
-                    <button class="btn-mini" style="background-color:tomato;" id="2-P">Total MXN</button>
-                    <button class="btn-mini" style="background-color: blue;" id="2-E">Total EUR</button>
-                    <button class="btn-mini" style="background-color: green;" id="2-D">Total USD</button>
-                </div>
-                <button class="btn" id="2-C"> Total/Ciudad</button>
-                <button class="btn" id="2-F"> Por Fechas</button>
-                <button class="btn" id="2-R"> Registro</button>
-                <h2>Carlos</h2>
-                <div class="three-card">
-                    <button class="btn-mini" style="background-color:tomato;" id="3-P">Total MXN</button>
-                    <button class="btn-mini" style="background-color: blue;" id="3-E">Total EUR</button>
-                    <button class="btn-mini" style="background-color: green;" id="3-D">Total USD</button>
-                </div>
-                <button class="btn" id="3-C"> Total/Ciudad</button>
-                <button class="btn" id="3-F"> Por Fechas</button>
-                <button class="btn" id="3-R"> Registro</button>
-                <h2>Ana</h2>
-                <div class="three-card">
-                    <button class="btn-mini" style="background-color:tomato;" id="4-P">Total MXN</button>
-                    <button class="btn-mini" style="background-color: blue;" id="4-E">Total EUR</button>
-                    <button class="btn-mini" style="background-color: green;" id="4-D">Total USD</button>
-                </div>
-                <button class="btn" id="4-C"> Total/Ciudad</button>
-                <button class="btn" id="4-F"> Por Fechas</button>
-                <button class="btn" id="4-R"> Registro</button>
-                <h2>Maria</h2>
-                <div class="three-card">
-                    <button class="btn-mini" style="background-color:tomato;" id="5-P">Total MXN</button>
-                    <button class="btn-mini" style="background-color: blue;" id="5-E">Total EUR</button>
-                    <button class="btn-mini" style="background-color: green;" id="5-D">Total USD</button>
-                </div>
-                <button class="btn" id="5-C"> Total/Ciudad</button>
-                <button class="btn" id="5-F"> Por Fechas</button>
-                <button class="btn" id="5-R"> Registro</button>
-                <h2>Alejandra</h2>
-                <div class="three-card">
-                    <button class="btn-mini" style="background-color:tomato;" id="6-P">Total MXN</button>
-                    <button class="btn-mini" style="background-color: blue;" id="6-E">Total EUR</button>
-                    <button class="btn-mini" style="background-color: green;" id="6-D">Total USD</button>
-                </div>
-                <button class="btn" id="6-C"> Total/Ciudad</button>
-                <button class="btn" id="6-F"> Por Fechas</button>
-                <button class="btn" id="6-R"> Registro</button>
-                <h2>Todos</h2>
-                <div class="three-card">
-                    <button class="btn-mini" style="background-color:tomato;" id="7-P">Total MXN</button>
-                    <button class="btn-mini" style="background-color: blue;" id="7-E">Total EUR</button>
-                    <button class="btn-mini" style="background-color: green;" id="7-D">Total USD</button>
-                </div>
-            </div>
-        </div>
-        <div class="resultados" id="resultados">
-     
-          
-        </div>
-    </div>
     <footer class="footer-dark">
         <div class="container">
             <div class="row">
@@ -223,7 +172,7 @@
     </script>
     <script src="/app.js" type="module"></script>
 
-   
+
 </body>
 
 </html>
