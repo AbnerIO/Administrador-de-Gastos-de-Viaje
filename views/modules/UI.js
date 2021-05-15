@@ -16,7 +16,6 @@ export class UI {
       `;
     data.push(product);
     productList.appendChild(element);
-    this.deleteProduct();
     console.log(data);
 
   }
@@ -56,16 +55,9 @@ export class UI {
       </div>
       `;
     productList.appendChild(element);
-    this.deleteProduct();
 
   }
-  deleteProduct() {
-    document.getElementById("product-form").reset();
-  }
-  resetLog() {
-    document.querySelector("#resultados").innerHTML = ` `;
-
-  }
+  
 }
 
 export const decimas = (num, decimales = 2) => {

@@ -1,5 +1,7 @@
 /*Header*/
-
+body {
+  background-image:url("../img/OIP.jpg");
+}
   #logo {
     width: 3.5rem;
     height: 3.5rem;
@@ -28,14 +30,17 @@
     margin: 2rem;
   }
   .card {
+    transform: scale(0.9);
     background-color: #a8dadc;
+    margin-top: -3rem;
     min-height: 20rem;
     min-width: 20rem;
     border-radius: 1.2em;
     border-style:solid;
     border-color: #a5a5a5;
     padding-right: 1rem;
-    padding-bottom: 1rem;
+    padding-bottom: 0rem;
+    padding-top: -1rem;
   }
   .card h1 {
     margin: 1rem 1rem 1rem 1.1rem;
@@ -133,111 +138,7 @@
     text-decoration: none;
     text-shadow: 0px 1px 0px #b23e35;
   }
-  /*comandos*/
-  .three-card{
-    display: flex;
-  }
-  .btn-mini {
-    background-color: #e63946;
-    padding: 0.1rem .1rem;
-    border: .2px solid #ffffff;
-    border-radius: 0.4rem;
-    color: #ffffff;
-    font-weight: 700;
-    letter-spacing: 0.2rem;
-    position: relative;
-    font-size:.7rem;
-    min-width: 2rem;
-    margin: .2rem;
-  }
-  .btn {
-    background-color: #e63946;
-    padding: 0.2rem 1rem;
-    border: 2px solid #ffffff;
-    border-radius: 0.5rem;
-    color: #ffffff;
-    font-weight: 700;
-    letter-spacing: 0.2rem;
-    position: relative;
-    font-size:1rem;
-    min-width: 11rem;
-  }
-  .btn:hover {
-    background-color: tomato;
-    cursor:pointer;
-  }
-  .comandos {
-    display: flex;
-  }
-  .card-comandos {
-    background-color: #a8dadc;
-    padding: .3rem;
-    border: .3rem;
-    margin: 2rem;
-    border-radius: 1.3rem;
-    width: 13rem;
-    max-height: 1350px;
-    border-style:solid;
-    border-color: #a5a5a5;
-    padding: .5rem;
-  }
-  .card-comandos h2 {
-    font-size: large;
-  }
-  .card-comandos h1 {
-    font-size: 1.2rem;
-    padding-left: 1.8rem;
-    justify-content: center;
-    justify-items: center;
-    align-items: center;
-  }
-  .resultados {
-    width: auto;
-    height: auto;
-    padding: 2rem 0rem 0rem 0rem;
-    margin: 0rem;
-    border: 0rem;
-    width: 50rem;
-    text-align: center;
-  }
-  .historial {
-    background-color:   #457b9d;
-    padding: 1rem 1rem;
-    margin: 1rem;
-    border: 2px solid #ffffff;
-    border-radius: 0.5rem;
-    color:black;
-    font-weight:500;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    letter-spacing: 0.3rem;
-    position: relative;
-    font-size: 1.2rem;
-    animation: fadeIn .4s;
-    -webkit-animation: fadeIn .4s;
-    -moz-animation: fadeIn .4s;
-    -o-animation: fadeIn .4s;
-    -ms-animation: fadeIn .4s;
-    min-width: 60rem;
-  }
-  .historial-container {
-    display: flex;
-    min-width: 60rem;
-    justify-content: center;
-  }
-  .stickers2 {
-    height: 4.7rem;
-    width: 4.7rem;
-    padding-top: 1rem;
-    padding-right: 0rem;
-    padding-left: 1rem;
-     margin-left: 2rem;
-   border-color: black;
-   animation: fadeIn .4s;
-    -webkit-animation: fadeIn .4s;
-    -moz-animation: fadeIn .4s;
-    -o-animation: fadeIn .4s;
-    -ms-animation: fadeIn .4s;
-  }
+  
   /*ANIMATED KEY FRAMES*/
   @keyframes fadeIn {
     0% {

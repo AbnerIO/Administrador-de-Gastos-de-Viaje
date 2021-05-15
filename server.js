@@ -40,7 +40,23 @@ passport.deserializeUser(function(id, done){
 })
 
 
+app.get("/Comandos", (req,res,next)=>{
+    if(req.isAuthenticated()) return next();
 
+    res.redirect("/")
+},(req, res)=>{
+    //si ya iniciamos sesion entras
+    res.render("comandos")
+})
+
+app.get("/log", (req,res,next)=>{
+    if(req.isAuthenticated()) return next();
+
+    res.redirect("/")
+},(req, res)=>{
+    //si ya iniciamos sesion entras
+    res.render("log")
+})
 
 app.get("/tproject", (req,res,next)=>{
     if(req.isAuthenticated()) return next();
