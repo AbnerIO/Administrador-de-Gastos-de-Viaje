@@ -1,6 +1,9 @@
-body {
-  background-image:url("../img/OIP.jpg");
-    
+
+  #logo {
+    width: 3.5rem;
+    height: 3.5rem;
+    padding: 0rem 0rem .4rem 0rem;
+    margin-right: 1rem;
   }
   .both {
       display: flex;
@@ -42,14 +45,14 @@ body {
   }
   .card-comandos {
     transform: scale(.9 ,.8);
-    background-color: #1d3557;
+    background-color: #a8dadc;
     border: .1rem;
     border-radius: 1.5rem;
     width: 24rem;
     height: 46rem;
     padding: .5rem;
     margin-top: -3rem;
-    color: white;
+    color: black;
   }
   .card-comandos h2 {
     font-size: large;
