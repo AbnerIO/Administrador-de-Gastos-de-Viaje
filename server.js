@@ -49,13 +49,13 @@ app.get("/Comandos", (req,res,next)=>{
     res.render("comandos")
 })
 
-app.get("/log", (req,res,next)=>{
+app.get("/location", (req,res,next)=>{
     if(req.isAuthenticated()) return next();
 
     res.redirect("/")
 },(req, res)=>{
     //si ya iniciamos sesion entras
-    res.render("log")
+    res.render("Location")
 })
 
 app.get("/tproject", (req,res,next)=>{
