@@ -1,12 +1,12 @@
 // UI Constructor
-import * as UI from "./modules/UI.js";
+
 //Firebase modules
 import * as firebase from "./modules/BDFunctions.js";
 import * as f from "./modules/functions.js";
 
 
 //DOM Universal Activities---------------------------------------------------------------------------------------
-const ui = new UI.UI;
+
 firebase.cargarData();
 
 

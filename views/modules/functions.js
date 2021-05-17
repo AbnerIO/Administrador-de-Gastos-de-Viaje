@@ -214,17 +214,15 @@ export const ConsultaRegistro = (id, user, divisa) => {
       let total;
       switch (gasto.currency) {
         case "Dolar":
-          total = gasto.price*20.59
+          total = (gasto.price*20.59) / gasto.traveler.length;
           total = UI.decimas(total,2)
           break;
           case "Euro":
-            total = gasto.price*24.56
+            total = gasto.price*24.56/ gasto.traveler.length;
             total = UI.decimas(total,2)
-            
           break;
-      
         default:
-          total = gasto.price
+          total = gasto.price/ gasto.traveler.length;
           break;
       }
       const productList = document.getElementById("resultados");
