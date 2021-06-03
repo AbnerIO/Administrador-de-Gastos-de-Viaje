@@ -27,7 +27,7 @@ Semestre Febrero- Junio 2021.
 
 ## Autor ✒️
 
-Abner Velázquez
+Abner Velázquez D.
 
 ## License 📄
 
